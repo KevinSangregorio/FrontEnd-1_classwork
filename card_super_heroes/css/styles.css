@@ -29,6 +29,9 @@ p {
     padding: 15px 45px;
     text-decoration: none;
 }
+.a {
+    text-decoration: none;
+}
 
 
 /*HEADER*/
@@ -78,10 +81,12 @@ h2{
     background-size: cover;
     box-shadow: 0 1px 5px grey;
     display: inline-block;
+    grid-column: 2 / 3;
     height: 270px;
     margin-top: 50px;
     text-align: center;
     width: 400px;
+
 }
 .bg-batman{
     background-image: url(/img/bg-batman.jpg);
@@ -95,11 +100,15 @@ h2{
     background-image: url(/img/bg-superman.jpg);
     border-radius: 40px 40px 0 0;
 }
+.card {
+    display: grid;
+    grid-template-columns: 3;
+}
 .contenido{
     background-color: #F3F3F3;
     box-shadow: 0 1px 5px grey;
+    grid-column: 2 / 3;
     height: 420px;
-    left: 571px;
     width: 400px;
 }
 .fa-heart {
@@ -118,7 +127,6 @@ h2{
 .fa-plus-circle:hover {
     cursor: pointer;
 }
-
 
 
 /*FOOTER*/
