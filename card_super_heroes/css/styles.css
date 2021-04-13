@@ -29,8 +29,9 @@ p {
     padding: 15px 45px;
     text-decoration: none;
 }
-.a {
+a {
     text-decoration: none;
+    color: white;
 }
 
 
