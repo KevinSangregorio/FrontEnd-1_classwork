@@ -9,7 +9,7 @@
     margin: 0;
     padding: 0;
 }
-i { 
+.cora { 
     left: 25px; 
     position: absolute;
     top: 10px;
@@ -43,21 +43,25 @@ a {
     font-weight: 500;
 }
 .contenido-title {
-    box-shadow: 0 4px 5px grey;
+    box-shadow: 0 4px 5px 2px grey;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 h1 {
     background-color: #00669F; 
     color: white;
     font-size: 48px;
     font-weight: 400;
-    padding: 10px 50px;  
-    
+    padding: 10px 50px;    
 }
 
 
 /*MAIN*/
 .card {
     text-align: center;
+    display: grid;
+    grid-template-columns: 3;
 }
 img {
     border-radius: 100%;
@@ -88,20 +92,16 @@ h2{
 
 }
 .bg-batman {
-    background-image: url(/img/bg-batman.jpg);
+    background-image: url(/card_super_heroes/img/bg-batman.jpg);
     border-radius: 40px 40px 0 0;
 }
 .bg-wwoman {
-    background-image: url(/img/bg-wonderw.jpg);
+    background-image: url(/card_super_heroes/img/bg-wonderw.jpg);
     border-radius: 40px 40px 0 0;
 }
 .bg-superman {
-    background-image: url(/img/bg-superman.jpg);
+    background-image: url(/card_super_heroes/img/bg-superman.jpg);
     border-radius: 40px 40px 0 0;
-}
-.card {
-    display: grid;
-    grid-template-columns: 3;
 }
 .contenido {
     background-color: #F3F3F3;
@@ -119,12 +119,12 @@ h2{
 .fa-plus-circle {
     color: #00669F;
     font-size: 80px;
-    left: 1400px;
-    position: relative;
-    top: -1000px;
-}
-.fa-plus-circle:hover {
     cursor: pointer;
+}
+.fixed {
+    position: fixed;
+    top: 457px;
+    right: 0;
 }
 
 
@@ -138,5 +138,7 @@ footer p {
     color: white;
     text-align: center;
 }
+
+
 
 
