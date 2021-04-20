@@ -1,0 +1,7 @@
+@import url(loginYregister.css);
+#contenedor {
+    height: 100%;
+    width: 100%;
+    background-image: url(/img/bg_harley_quinn_page.png);
+    background-color: grey;
+}

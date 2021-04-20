@@ -1,4 +1,8 @@
 /*GENERALES*/
+:root {
+    --colorPrimario: #00669F;
+    --colorSecundario: #1CD1B0;
+}
 @font-face {
     font-family: Roboto;
     src: url(../../../../../../Recursos_IT/Tipografías/Roboto/Roboto-Regular.ttf );
@@ -21,7 +25,7 @@ p {
     position: relative;
 }
 .button {
-    background-color: #00669F;
+    background-color: var(--colorPrimario);
     border-radius: 5px;
     display: inline-block;
     margin-top: 60px;
@@ -35,7 +39,7 @@ a {
 
 /*HEADER*/
 .descuento {
-    background-color: #1CD1B0;
+    background-color: var(--colorSecundario);
     padding-left: 50px ;
 }
 .descuento p {
@@ -49,7 +53,7 @@ a {
     z-index: 10;
 }
 h1 {
-    background-color: #00669F; 
+    background-color: var(--colorPrimario); 
     color: white;
     font-size: 48px;
     font-weight: 400;
@@ -58,10 +62,41 @@ h1 {
 
 
 /*MAIN*/
-.card {
+.card1 {
+  grid-column: 1 / 2;  
+  text-align: center;
+}
+.card2 {
+    grid-column: 2 / 3;
+    text-align: center;
+}
+.card3 {
+    grid-column: 3 / 4;
+    text-align: center;
+}
+.contenedor {
     text-align: center;
     display: grid;
-    grid-template-columns: 3;
+    grid-template-columns: repeat(3, 1fr);
+}
+.fondo {
+    background-size: cover;
+    box-shadow: 0 1px 5px grey;
+    display: inline-block;
+    height: 270px;
+    margin-top: 50px;
+    text-align: center;
+    width: 400px;
+}
+.contenido {
+    background-color: #F3F3F3;
+    box-shadow: 0 1px 5px grey;
+    height: 420px;
+    width: 400px;  
+}
+.contenido p {
+    padding: 115px 20px 0 ;
+    text-align: left;   
 }
 img {
     border-radius: 100%;
@@ -70,46 +105,25 @@ img {
     position: absolute;
     top: -25%;
 }
-h2{
+.h2{
     font-size: 40px;
     font-weight: 400;
     padding-top: 100px;
     text-transform: uppercase;
 }
-.contenido p {
-    padding: 15px 20px 0 ;
-    text-align: left;
-}
-.fondo {
-    background-size: cover;
-    box-shadow: 0 1px 5px grey;
-    display: inline-block;
-    grid-column: 2 / 3;
-    height: 270px;
-    margin-top: 50px;
-    text-align: center;
-    width: 400px;
-
-}
 .bg-batman {
-    background-image: url(/card_super_heroes/img/bg-batman.jpg);
+    background-image: url(/img/bg-batman.jpg);
     border-radius: 40px 40px 0 0;
 }
 .bg-wwoman {
-    background-image: url(/card_super_heroes/img/bg-wonderw.jpg);
+    background-image: url(/img/bg-wonderw.jpg);
     border-radius: 40px 40px 0 0;
 }
 .bg-superman {
-    background-image: url(/card_super_heroes/img/bg-superman.jpg);
+    background-image: url(/img/bg-superman.jpg);
     border-radius: 40px 40px 0 0;
 }
-.contenido {
-    background-color: #F3F3F3;
-    box-shadow: 0 1px 5px grey;
-    grid-column: 2 / 3;
-    height: 420px;
-    width: 400px;
-}
+
 .fa-heart {
     color: red;
     font-size: 32px;
@@ -117,7 +131,7 @@ h2{
     top: 20px;
 }
 .fa-plus-circle {
-    color: #00669F;
+    color: var(--colorPrimario);
     font-size: 80px;
     cursor: pointer;
 }
@@ -130,7 +144,7 @@ h2{
 
 /*FOOTER*/
 footer {
-    background-color: #00669F;
+    background-color: var(--colorPrimario);
     margin-top: 30px;
     padding: 30px;
 }
