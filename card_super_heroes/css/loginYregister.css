@@ -90,6 +90,7 @@ form + p {
 form + p a {
     color: var(--colorPrimario);
 }
+
 /*FOOTER*/
 footer {
     margin-top: 125px;

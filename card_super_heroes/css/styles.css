@@ -64,15 +64,15 @@ h1 {
 /*MAIN*/
 .card1 {
   grid-column: 1 / 2;  
-  text-align: center;
+  margin: 0 auto;
 }
 .card2 {
     grid-column: 2 / 3;
-    text-align: center;
+    margin: 0 auto;
 }
 .card3 {
     grid-column: 3 / 4;
-    text-align: center;
+    margin: 0 auto;
 }
 .contenedor {
     text-align: center;
@@ -139,6 +139,12 @@ img {
     position: fixed;
     top: 457px;
     right: 0;
+}
+i {
+    transition: color .3s;
+}
+span i:hover {
+    color: #001D2D;   
 }
 
 

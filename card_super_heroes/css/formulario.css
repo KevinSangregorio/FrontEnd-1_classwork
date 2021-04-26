@@ -1,11 +1,5 @@
  @import "./styles.css";
  /*
-#contenedor {
-    height: 100%;
-    width: 100%;
-    background-image: url(/img/bg_harley_quinn_page.png);
-    background-color: grey;
-}  ERA DE HARLEY */
 
     /*TIPOGRAFIAS*/
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Karla:wght@400;700&display=swap');
@@ -105,7 +99,6 @@ select {
     width: auto;
     height: auto;
     margin: 0;
-    display: ;
 }
 .form-2-left {
     width: 40%;
