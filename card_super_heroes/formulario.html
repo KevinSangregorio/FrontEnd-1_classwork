@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/formulario.css">
+</head>
+<body>  
+
+    <div class="descuento">
+        <p>20% de descuento en todos los productos!</p>       
+    </div> 
+
+    <header class="contenido-title"> 
+        <img src="/img/icon_loginYregister.png" alt="">
+        <h1><a href="#"></a>Nombre tienda</a></h1>     
+    </header>
+
+    <main>
+        
+        <div class="contenedor-formulario">
+            <h2>Añadí tu super!</h2>
+            <p>Agregá tu personaje favorito completando las opciones</p>
+            <form action="#">
+                <div class="formulario">
+
+                    <div class="block"> 
+
+                        <div class="form-left">
+                            <label class="label-textYdate" for="name">Nombre </label>
+                            <input type="text" id="name" name="nombre" placeholder="Kevin Sangregorio" required>
+                        </div>
+
+                        <div class="form-right">
+                            <label>Especie
+                                <select name="especie">
+                                    <option value="desconocido">Desconocido</option>
+                                    <option value="mutante">Mutante</option>
+                                    <option value="metahumano">Metahumano</option>
+                                    <option value="alien">Alien</option>
+                                </select>
+                            </label>
+                        </div>
+                        
+                    </div>
+
+                    <div class="block form-1-down">
+                        <div class="form-left">
+                            <label class="label-textYdate" for="date">Fecha</label> 
+                            <input type="date" id="date" name="fecha">
+                        </div>
+
+                        <div class="form-right">
+                            <label for="archivo">Agregar foto</label>
+                            <input type="file" id="archivo" accept=".jpg">
+                        </div>
+                    </div>
+                    
+                    <div class="block">
+                        <div class="form-2-left">
+                            <textarea name="comentario" placeholder="Descripción" ></textarea>
+                        </div>
+
+                        <div class="form-2-right">
+                            <div class="check-form">
+                                <fieldset>
+                                    <legend>Poderes</legend>
+                                    <div class="block align-left"> 
+                                        <input type="checkbox" name="poderes" id="volar" value="volar">
+                                        <label for="volar">Volar</label>
+                                    </div>
+
+                                <div class="block align-left">
+                                    <input type="checkbox" name="poderes" id="super-inteligencia" value="super-inteligencia">
+                                    <label for="super-inteligencia">Superinteligencia</label>
+                                </div>    
+                                    
+
+                                <div class="block align-left">
+                                    <input type="checkbox" name="poderes" id="vista-rayo-laser" value="vista-rayo-laser">
+                                    <label for="vista-rayo-laser">Vista de rayo láser</label>
+                                </div>
+
+                                <div class="block align-left">
+                                    <input type="checkbox" name="poderes" id="billetera-gorda" value="billetera-gorda">
+                                    <label for="billetera-gorda">Billetera gorda </label>
+                                </div>  
+                            </div>
+                        </fieldset>
+                        <hr>
+                            <div class="radio-form">
+                                <fieldset>
+                                    <legend>Tipo de personaje</legend>
+                                    <div class="block align-left">
+                                        <input type="radio" name="tipo-personaje" id="good-roll" value="heroe-heroina">
+                                        <label for="good-roll">Héroe / Heroína</label> 
+                                    </div>
+
+                                    <div class="block align-left">
+                                        <input type="radio" name="tipo-personaje" id="bad-roll" value="super-inteligencia">
+                                        <label for="bad-roll">Villano / Villana</label>    
+                                    </div> 
+                                </fieldset> 
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="boton-submit">
+                        <input type="submit" value="Añadir">
+                    </div>
+                   
+
+                </div>
+
+                    
+
+                </div> 
+                        
+                                                                       
+            </form>   
+        </div> 
+    </main>
+
+    <footer>
+        <p>Todos los derechos reservados FRONT END 1</p>
+    </footer>
+
+</body>
+</html>

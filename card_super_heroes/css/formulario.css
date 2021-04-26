@@ -1,0 +1,177 @@
+ @import "./styles.css";
+ /*
+#contenedor {
+    height: 100%;
+    width: 100%;
+    background-image: url(/img/bg_harley_quinn_page.png);
+    background-color: grey;
+}  ERA DE HARLEY */
+
+    /*TIPOGRAFIAS*/
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Karla:wght@400;700&display=swap');
+
+/*GENERALES*/  
+body {
+    font-family: 'Inter', sans-serif;
+}
+.block {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+}
+.align-left {
+    text-align: left;
+}
+header img { 
+    height: 75px;
+    left: 0;
+    top: 0; 
+    padding-left: 20px;
+}
+header h1 a{
+    padding-left: 100px;
+}
+
+/*MAIN*/  
+.contenedor-formulario {
+    display: block;
+    margin: 50px auto;
+    padding: 25px;
+    width: 55%;
+    height: 750px;
+    background-color: var(--colorPrimario);
+    border-radius: 50px;
+}
+h2, p {
+    text-align: center;
+    color: white;
+}
+h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+}
+.contenedor-formulario p {
+    font-weight: 300;
+    margin: 10px 0 20px;
+}
+
+.form-left, .form-right {
+    display: inline-block;
+    width: 40%;
+}
+.form-right {
+    text-align: left;
+}
+.form-right input{
+width: 100%;
+}
+label, input {
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+}
+input {
+    height: 45px;
+    border-radius: 10px;
+    width: 95%;
+    outline: none;
+    font-size: 16px;
+    margin-top: 10px;
+    border: none;
+}
+label {
+    text-align: left;
+    text-indent: 3%;
+    color: white;
+    font-family: 'inter', sans-serif;
+    font-weight: 300;  
+}
+select {
+    height: 45px;
+    border-radius: 10px;
+    width: 95%;
+    outline: none;
+    font-size: 16px;
+    margin-top: 10px;
+    border: none;
+}
+.form-1-down {
+    margin-top: 20px;
+}
+.form-2-left, .form-2-right {
+    display: inline-block;
+}
+.check-form input, .radio-form input {
+    width: auto;
+    height: auto;
+    margin: 0;
+    display: ;
+}
+.form-2-left {
+    width: 40%;
+    text-align: center;
+    height: 320px;
+}
+.form-2-right {
+    width: 40%;
+    text-align: left;
+    vertical-align: top;
+}
+
+textarea {
+    resize: none;
+    outline: none;
+    width: 95% !important;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.form-2-right label,input {
+    display: inline-block;
+    width: 200px;
+}
+.label-textYdate {
+    text-indent: 5%;
+}
+.label-textYdate~input {
+    width: 90%;
+}
+
+
+textarea {
+    font-size: 1.5em;
+}
+textarea::placeholder {
+  
+    padding: 15px 0 0 10px;
+}
+fieldset {
+    border: none;
+    color: white;
+}
+fieldset {
+    margin-top: 10px;
+    
+}
+hr {
+    margin: 25px 0 ;
+}
+.boton-submit {
+    text-align: center;
+    margin-top: 10px;
+  
+}
+.boton-submit input {
+    height: 70px;
+    width: 300px;
+    font-size: 40px;
+    font-weight: 700;
+    background-color: var(--colorSecundario);
+    transition: all .3s;
+  
+}
+.boton-submit input:hover {
+    background-color: #001D2D;
+    color: white;
+    
+}
