@@ -7,9 +7,9 @@
 
 * {
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
 }
 
 a {
@@ -19,21 +19,21 @@ a {
 
 /*HEADER*/
 header {
+  align-items: center;
   background-color: var(--colorPrimario);
   display: flex;
-  align-items: center;
   justify-content: space-between;
   padding: 38px 35px;
 }
 
 header div {
-  display: flex;
   align-items: center;
+  display: flex;
 }
 
 header div h1 {
-  margin-left: 20px;
   color: var(--colorTerciario);
+  margin-left: 20px;
 }
 
 header div h1 span {
@@ -45,14 +45,14 @@ header div h1 span {
 }
 
 header nav ul {
-  display: flex;
   align-items: center; 
+  display: flex;
 }
 
 header nav ul li a {
-  padding: 0px 4px;
   color: var(--colorTerciario);
-
+  padding: 0px 4px;
+  transition: all 1s;
 }
 
 .carrito {
@@ -61,22 +61,20 @@ header nav ul li a {
 }
 
 
-
-
 /*MAIN*/
 .hero {
-  height: 512px;
+  align-items: center;
   background-image: url("../img/bg.jpg");
   background-size: cover;
   display: flex;
+  height: 512px;
   justify-content: center;
-  align-items: center;
 }
 
 .hero div {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .hero div h3 {
@@ -88,47 +86,48 @@ header nav ul li a {
   color: var(--colorSecundario);
 }
 
-.hero div a {
+.btn-comprar {
   background-color: var(--colorSecundario);
   border-radius: 5px;
   color: var(--colorTerciario);
-  padding: 16px 61px;
   margin-top: 30px;
+  padding: 16px 61px;
+  transition: all .3s;
 }
 
 h2 {
-  text-align: center;
-  margin: 40px 0 20px 0;
-  font-weight: 400;
   font-size: 30px;
+  font-weight: 400;
+  margin: 40px 0 20px 0;
+  text-align: center;
 }
 
 .container__card {
+  align-items: center;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
   margin-bottom: 85px;
 }
 
 .card {
   background-color: #ffffff;
-  padding: 30px 0;
   border-radius: 5px;
-  
+  padding: 30px 0;
+  transition: all .3s;
 }
 
 .card-img {
+  margin-bottom: 20px;
   text-align: center;
   width: 100%;
-  margin-bottom: 20px;
   
 }
 
 .card-text {
-  padding-top: 20px;
   border-top: 0.2px solid var(--colorPrimario);
-  width: 245px;
+  padding-top: 20px;
   padding:20px 20px 0;
+  width: 245px;
   
 }
 
@@ -145,24 +144,25 @@ h5 {
 }
 
 h6 {
-  font-size: 10px;
   color: #619D00;
+  font-size: 10px;
 }
 
 .container__banner {
   display: flex;
-  width: 100%;
   justify-content: space-evenly;
   padding-bottom: 85px;
+  width: 100%;
 }
 
 .banner  {
-  width: 360px;
-  height: 135px;
+  align-items: center;
   border-radius: 5px;
   display: flex;
-  align-items: center;
+  height: 135px;
   justify-content: flex-end;
+  transition: all .3s;
+  width: 360px;
 }
 
 .sillas {
@@ -180,6 +180,10 @@ h6 {
   font-weight: 400;
   padding-right: 10px;
 }
+.card:hover, .banner:hover, .btn-comprar:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
 
 /*FOOTER*/
 .footer__top {
@@ -190,40 +194,40 @@ h6 {
 }
 
 .footer__top div:first-child {
-  display: flex;
   align-items: center;
+  display: flex;
 }
 
 .footer__top div:first-child h4 {
-  margin-left: 20px;
-  font-weight: 700;
-  font-size: 25px;
   color: var(--colorTerciario);
+  font-size: 25px;
+  font-weight: 700;
+  margin-left: 20px;
 }
 
 .footer__top div:first-child span {
-  font-weight: 400;
   color: var(--colorSecundario);
+  font-weight: 400;
 }
 
 .footer__top div:last-child div ul {
-  display: flex;
-  list-style: none;
-  justify-content: space-between;
   align-items: center;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
   margin-top: 20px;
 }
 
 .footer__top div:last-child h4 {
-  font-size: 25px;
   color: var(--colorTerciario);
+  font-size: 25px;
   font-weight: 400;
 }
 
 .footer__bottom {
   background-color: #C4C4C4;
-  text-align: center;
   padding: 8px 0;
+  text-align: center;
 }
 
 @media screen AND (max-width: 480px) {
@@ -232,8 +236,8 @@ h6 {
     display: none; 
   }
   .kangrebur {
-    display: block;
     color: var(--colorTerciario);
+    display: block;
     font-size: 27px;
   }
   
@@ -254,12 +258,12 @@ h6 {
 
   /* SECTION 2 */
   .container__banner {
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
   }
   .banner {
-    width: 320px;
     height: 120px;
+    width: 320px;
   }
   .computadoras {
     margin-top: 20px;
@@ -272,10 +276,10 @@ h6 {
 
   /* FOOTER */
   .footer__top {
-    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    flex-direction: column;
     height: 230px;
+    justify-content: space-around;
     padding: 0;
   }
 }
