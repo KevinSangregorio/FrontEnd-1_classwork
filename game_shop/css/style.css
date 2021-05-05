@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+:root {
+  --colorPrimario: #222222;
+  --colorSecundario: #d01418;
+  --colorTerciario: #f3f3f3;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/*HEADER*/
+header {
+  background-color: var(--colorPrimario);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 38px 35px;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+}
+
+header div h1 {
+  margin-left: 20px;
+  color: var(--colorTerciario);
+}
+
+header div h1 span {
+  color: var(--colorSecundario);
+}
+
+.kangrebur {
+  display: none;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center; 
+}
+
+header nav ul li a {
+  padding: 0px 4px;
+  color: var(--colorTerciario);
+
+}
+
+.carrito {
+  color: var(--colorSecundario);
+  font-size: 24px;
+}
+
+
+
+
+/*MAIN*/
+.hero {
+  height: 512px;
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero div h3 {
+  color: var(--colorTerciario);
+  font-size: 40px;
+}
+
+.hero div h3 span {
+  color: var(--colorSecundario);
+}
+
+.hero div a {
+  background-color: var(--colorSecundario);
+  border-radius: 5px;
+  color: var(--colorTerciario);
+  padding: 16px 61px;
+  margin-top: 30px;
+}
+
+h2 {
+  text-align: center;
+  margin: 40px 0 20px 0;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.container__card {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 85px;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 30px 0;
+  border-radius: 5px;
+  
+}
+
+.card-img {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+  
+}
+
+.card-text {
+  padding-top: 20px;
+  border-top: 0.2px solid var(--colorPrimario);
+  width: 245px;
+  padding:20px 20px 0;
+  
+}
+
+h4,h5,h6 {
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 13px;
+}
+
+h6 {
+  font-size: 10px;
+  color: #619D00;
+}
+
+.container__banner {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  padding-bottom: 85px;
+}
+
+.banner  {
+  width: 360px;
+  height: 135px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.sillas {
+  background-image: url(../img/banner2.svg);
+  background-size: cover;
+}
+
+.computadoras {
+  background-image: url(../img/banner.svg);
+}
+
+.enlace__banner {
+  color: var(--colorTerciario);
+  font-size: 25px;
+  font-weight: 400;
+  padding-right: 10px;
+}
+
+/*FOOTER*/
+.footer__top {
+  background-color: var(--colorPrimario);
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 70px;
+}
+
+.footer__top div:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.footer__top div:first-child h4 {
+  margin-left: 20px;
+  font-weight: 700;
+  font-size: 25px;
+  color: var(--colorTerciario);
+}
+
+.footer__top div:first-child span {
+  font-weight: 400;
+  color: var(--colorSecundario);
+}
+
+.footer__top div:last-child div ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.footer__top div:last-child h4 {
+  font-size: 25px;
+  color: var(--colorTerciario);
+  font-weight: 400;
+}
+
+.footer__bottom {
+  background-color: #C4C4C4;
+  text-align: center;
+  padding: 8px 0;
+}
+
+@media screen AND (max-width: 480px) {
+  /* HEADER */
+  nav {
+    display: none; 
+  }
+  .kangrebur {
+    display: block;
+    color: var(--colorTerciario);
+    font-size: 27px;
+  }
+  
+  
+
+  /* MAIN */
+  /* SECTION 1 */
+  .hero div {
+    padding: 0 30px;
+    text-align: center;
+  }
+  .container__card {
+    flex-direction: column;
+  }
+  .card:not(:last-child) {
+    margin-bottom: 35px;
+  }
+
+  /* SECTION 2 */
+  .container__banner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .banner {
+    width: 320px;
+    height: 120px;
+  }
+  .computadoras {
+    margin-top: 20px;
+  }
+  .banner a {
+    font-size: 15px;
+    font-weight: 400;
+    padding-right: 35px;
+  }
+
+  /* FOOTER */
+  .footer__top {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 230px;
+    padding: 0;
+  }
+}
