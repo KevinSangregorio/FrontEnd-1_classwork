@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+:root {
+  --gray: #222222;
+  --green: #39b24a;
+  --lightWhite: #f3f3f3;
+  --red: #fc200c;
+  --white: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--lightWhite);
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  align-items: center; 
+  background: var(--gray);
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1.25rem;
+}
+
+header nav ul {
+  display: flex;
+  gap: 20px;
+  
+}
+
+header .header__logo {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+
+
+header .header__logo span,
+footer .footer__logo span {
+  color: var(--green);
+}
+header .header__logo span:nth-child(2),
+footer .footer__logo span:nth-child(2) {
+  color: var(--red);
+}
+
+.kangrebur {
+  display: none;
+} 
+main {
+    padding: 35px 0px;
+    /* Alto del main: alto viewport - alto Header - alto Footer
+       Me aseguro que el main ocupa todo el alto disponible */
+    min-height: calc(100vh - 100px - 150px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .container {
+  display: flex;
+  gap: 30px;
+  justify-content: space-evenly;
+}
+
+main section .card {
+  border-radius: 5px;
+  flex-grow: 1;
+  height: 21.875rem; /* 350px/16px (16px=1rem) */
+  width: 30.625rem;  /* 490px/16px (16px=1rem) */
+}
+
+main section .delivery {
+  background-size: cover;
+  background: url("../img/delivery.jpg");
+  color: var(--red);
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 20px;
+}
+main section .delivery span {
+  color: var(--lightWhite);
+}
+main section .podio {
+  background: #fff;
+  font-weight: bold;
+}
+main section .podio h3 {
+  color: var(--red);
+  font-size: 24px;
+  padding: 26px;
+  text-align: center;
+  width: 100%;
+}
+.podio .top5 .podio__pizzas h4 {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+.top5 {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+} 
+
+.top5 .podio__pizzas ol li {
+  padding: 10px 0px;
+}
+
+footer {
+  background: #222;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 19px 20px;
+}
+
+footer .footer__logo {
+  align-items: center;
+  color: var(--lightWhite);
+  display: flex;
+  font-size: 14px;
+  gap: 10px;
+}
+
+footer ul {
+  color: var(--lightWhite);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+footer ul li:last-child {
+  order: -1;
+}
+
+footer ul li:first-child {
+  order: -2;
+}
+ 
+
+@media screen and (max-width:  768px) {
+   .kangrebur {
+     display: flex;
+     font-size: 40px;
+   }
+   header nav {
+    display: none;
+  }
+  main .container {
+    align-items: center;
+    flex-direction: column;
+  }
+}
