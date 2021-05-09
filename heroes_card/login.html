@@ -5,38 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Super-heores / Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <p>20% de descuento en todos los productos</p>
+    <p class="headerUp__descuento">20% de descuento en todos los productos</p>
 
     <header>
         <div class="header__top">
             <img src="img/market.png" alt="Logo">
-            <h1>Mafalda</h1>
+            <h1>Super Heroes</h1>
         </div>
 
         <nav>
             <ul>
-                <li><a href="index.html"></a>Home</li>
-                <li><a href="contacto.html"></a>Contacto</li>
-                <li><a href="registro.html"></a>Registarme</li>
-                <li><a href="#"></a>Ingresar</li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="registro.html">Registarme</a></li>
+                <li><a href="#">Ingresar</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <div>
-            <h2>Login</h2>
-            <form action="#">
-                <input type="text" name="usuario" placeholder="Usuario">
-                <input type="password" name="password">
-
-                <input type="submit" value="Entrar">
-            </form>
-            <p>¿No tienes una cuenta? <a href="registro.html">Registrarme</a></p>
-        </div>
+        <div class="contenedor">
+            <div class="form-lyr">
+                <h2>Login</h2>
+                <form action="#">
+                    <input type="text" name="usuario" placeholder="Usuario">
+                    <input type="password" name="password" placeholder="Contraseña">
+    
+                    <input type="submit" value="Entrar">
+                </form>
+                <p>¿No tienes una cuenta? <a href="registro.html">Registrarme</a></p>
+            </div>
+        </div> 
     </main>
 
     <footer>
