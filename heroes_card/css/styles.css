@@ -126,11 +126,29 @@ nav ul li a:hover::before {
     padding: 10px 20px;
 }
 
+.form-lyr form select {
+    border: 2px solid #000;
+    font-family: "Karla",sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    padding: 10px 20px;
+}
+
 ::placeholder {
     color: #000;
 }
 
-.form-lyr form input[type=submit] {
+.botones-form {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.botones-form input {
+    width: 100%;
+}
+
+.form-lyr form input[type=submit], input[type=reset] {
     background-color: var(--colorSecundario);
     border-radius: 50px;
     border: none;
@@ -144,6 +162,20 @@ nav ul li a:hover::before {
 .form-lyr form input[type=submit]:hover {
     background-color: var(--colorPrimario);
     color: #fff;
+}
+
+.form-lyr form input[type=reset] {
+    background-color: #888888;
+    color: white;
+    border: none;
+    font-family: "Karla",sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.form-lyr form input[type=reset]:hover {
+    background-color: #333333;
+    ;
 }
 
 .form-lyr p a{
@@ -163,5 +195,17 @@ footer p {
     font-weight: 400;
     padding: 15px 0;
     text-align: center;
+}
+
+@media screen and (max-width: 480px){
+    header nav ul li a {
+        padding: 10px 10px;
+    }
+    .form-lyr {
+        width: 80%;
+    }
+    footer p {
+        padding: 15px 20px; 
+    }  
 }
 
