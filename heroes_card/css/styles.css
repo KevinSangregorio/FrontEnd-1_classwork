@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Karla:wght@400;700&family=Roboto:wght@400;700&display=swap");
+
+:root {
+  --colorPrimario: #00669f;
+  --colorSecundario: #1cd1b0;
+  --colorTerciario: #f3f3f3;
+}
+
+/* GENERALES */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+input {
+    outline: none;
+}
+/* HEADER */
+.headerUp__descuento {
+  background-color: var(--colorSecundario);
+  font-size: 15px;
+  font-weight: 400;
+  padding: 5px 20px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+}
+
+.header__top {
+  align-items: center;
+  background-color: var(--colorPrimario);
+  display: flex;
+  gap: 20px;
+  padding: 5px 20px;
+}
+
+.header__top h1 {
+  color: white;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+header nav {
+  background-color: #001d2d;
+  box-shadow: 0 5px 5px -3px;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
+}
+
+header nav ul li a {
+  font-size: 0.9rem;
+  font-weight: 400;
+  padding: 10px 20px;
+  position: relative;
+  transition: all 0.5s;
+}
+
+nav ul li a::before {
+  background: var(--colorSecundario);
+  bottom: 6px;
+  content: "";
+  height: 4px;
+  position: absolute;
+  transition: width 0.5s;
+  width: 0;
+}
+
+nav ul li a:hover::before {
+  width: 100%;
+}
+
+/* MAIN */
+.contenedor {
+  align-items: center;
+  display: flex;
+  height: calc(100vh - 154px);
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+.form-lyr {
+    width: 50%;
+}
+
+.form-lyr h2 {
+    color: #333333;
+    font-family: "Inter", sans-serif;
+    font-size: 72px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.form-lyr form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-lyr form input{
+    border: 2px solid #000;
+    font-family: "Karla",sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    padding: 10px 20px;
+}
+
+::placeholder {
+    color: #000;
+}
+
+.form-lyr form input[type=submit] {
+    background-color: var(--colorSecundario);
+    border-radius: 50px;
+    border: none;
+    font-family: "Karla",sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 30px;
+    transition: all .3s;
+}
+
+.form-lyr form input[type=submit]:hover {
+    background-color: var(--colorPrimario);
+    color: #fff;
+}
+
+.form-lyr p a{
+    color: var(--colorPrimario);
+}
+
+
+/* FOOTER */
+footer {
+    background-color: var(--colorPrimario);
+}
+
+footer p {
+    color: #fff;
+    font-family: "Roboto",sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 15px 0;
+    text-align: center;
+}
+
