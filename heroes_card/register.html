@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Super-heores / Ingresar</title>
+    <title>Super-heores / Registro</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -21,8 +21,8 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="register.html">Registarme</a></li>
-                <li><a href="#">Ingresar</a></li>
+                <li><a href="#">Registarme</a></li>
+                <li><a href="login.html">Ingresar</a></li>
             </ul>
         </nav>
     </header>
@@ -30,12 +30,30 @@
     <main>
         <div class="contenedor">
             <div class="form-lyr">
-                <h2>Login</h2>
+                <h2>Registro</h2>
                 <form action="#">
-                    <input type="text" name="usuario" placeholder="Usuario">
+                    <input type="text" name="nombre" placeholder="Nombre y Apellido (Obligatorio)" required>
+
+                    <input type="email" name="email" placeholder="Correo electrónico (Obligatorio)" required>
+
                     <input type="password" name="password" placeholder="Contraseña">
-    
-                    <input type="submit" value="Entrar">
+
+                    <select name="País">
+                        <option value="Arg">Argentina</option>
+                        <option value="Bol">Bolivia</option>
+                        <option value="Chi">Chile</option>
+                        <option value="Col">Colombia</option>
+                        <option value="Par">Paraguay</option>
+                        <option value="Uru">Uruguay</option>
+                        <option value="Ven">Venezuela</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                    
+                    <div class="botones-form">
+                        <input type="reset" value="Resetear">
+
+                        <input type="submit" value="Entrar">
+                    </div>
                 </form>
                 <p>¿No tienes una cuenta? <a href="register.html">Registrarme</a></p>
             </div>
