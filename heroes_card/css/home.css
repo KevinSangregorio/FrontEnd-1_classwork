@@ -65,6 +65,7 @@ header {
     background-color: #F3F3F3;
     height: 336px;
     width: 300px;
+    box-shadow: 0 3px 9px -5px;     
 }
 
 .card__bottom h2 {
@@ -89,7 +90,12 @@ header {
     margin: 15px auto;
     padding: 15px 40px;
     text-align: center;
+    transition: all .3s;
     width: 150px;
+}
+
+.card__bottom a:hover {
+    background-color: #001D2D;
 }
 
 .fixed {
@@ -102,17 +108,25 @@ header {
 }    
 
 .fixed:hover {
-    color: #001D2D;
-    
+    color: #001D2D;  
 }
 
-@media screen AND (max-width: 480px) {
+
+@media screen AND (max-width: 768px) {
     .contenedor {
         flex-direction: column;
         gap: 30px;
         height: min-content;
         padding: 40px 0;
     }
+    header nav ul {
+        justify-content: space-evenly;
+    }
+
+}
+
+@media screen AND (max-width: 480px) {
+    
 
     .fixed {
         font-size: 36px;
