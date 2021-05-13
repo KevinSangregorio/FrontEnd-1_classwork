@@ -36,13 +36,33 @@
            <h2>Añadí a tu super!</h2>
            <p>Agregá tu personaje favorito completando las opciones.</p>
 
-           <div>
-           <label for="nombre"><input type="text" id="nombre" name="nombre" placeholder="*Obligatorio"></label>
-            <!-- Select -->
-           </div>
+           <form action="#">
+            <div class="form form-1-row">
+                <label for="nombre"></label>
+                <input type="text" id="nombre" name="nombre" placeholder="*Obligatorio">
+  
+                <label>Especie
+                    <select name="especie">
+                        <option value="desconocido">Desconocido</option>
+                        <option value="mutante">Mutante</option>
+                        <option value="metahumano">Metahumano</option>
+                        <option value="alien">Alien</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="form form-1-row">
+                <label for=""></label>
+                <input type="date" >
+
+                <label for=""></label>
+                <input type="text">
+                
+            </div>
 
 
-           <label for=""><input type="text"></label>
+            
+        </form>
         </div> 
     </main>
 
