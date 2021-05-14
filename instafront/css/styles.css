@@ -82,12 +82,12 @@ main {
 /* SECTION 1*/
 section {
     background-color: #fff;
+    margin-top: 40px;
 }
 
 .historias {
     border-radius: 5px;
     border: 1px solid #222222;
-    margin-top: 40px;
     padding: 15px;
 }
 
@@ -111,8 +111,7 @@ section {
 .publicaciones {
     border-radius: 5px;
     border: 1px solid #222222;
-    min-height: min-content;
-    margin-top: 40px;  
+    min-height: min-content;  
 }
 
 .publicaciones__perfil {
@@ -244,7 +243,7 @@ aside {
     color: #1CA0F6;
     font-size: 12px;
     font-weight: 400;
-    
+    margin-right: 18px;
 }
 
 .sugerencias div {
@@ -275,5 +274,37 @@ footer {
     margin-top: 80px;
     padding: 10px 0;
     text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    aside {
+        display: none;
+    }
+    .contenedor {
+        grid-template-areas: "header header header header header header header header header header header header"
+                             ". . main main main main main main main main . ."
+                             "footer footer footer footer footer footer footer footer footer footer footer footer";
+    }
+    header input {
+        grid-column: 6 / 10;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header input {
+        display: none;
+    }
+    section {
+        margin-top: 20px;
+    }
+    .contenedor {
+        grid-template-areas: "header header header header header header header header header header header header"
+                             ". main main main main main main main main main main ."
+                             "footer footer footer footer footer footer footer footer footer footer footer footer";
+    }
+    footer {
+        margin-top: 40px;
+    }
+    
 }
 
